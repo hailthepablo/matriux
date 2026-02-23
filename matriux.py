@@ -32,7 +32,7 @@ def highlight(string,condition):
     
 def generateMatrix():
     os.system("clear")
-    file = open(__file__.replace("MATRIUX.py","savedMatrix.txt"))
+    file = open(__file__.replace("matriux.py","savedMatrix.txt"))
     lines = list(file)
     file.close()
     if lines == []:
@@ -191,7 +191,7 @@ def applySave(usrInput,buttonRef):
     global mode
     global selectedPos
 
-    file = open(__file__.replace("MATRIUX.py","savedMatrix.txt"),"w")
+    file = open(__file__.replace("matriux.py","savedMatrix.txt"),"w")
     savedMatrix = ""
     for i in g_matrix.array:
         for j in i:
